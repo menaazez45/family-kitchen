@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مطبخ العيله</title>
+    <style>
+        .b {
+            width: 350px;
+            height: 200px;
+        }
+        .m {
+            text-align: center;
+            font-size: 40px;
+        }
+        p {
+            font-size: 20px;
+        }
+        .search-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .search-container input[type="text"] {
+            padding: 10px;
+            width: 300px;
+            border-radius: 5px 0 0 5px;
+            border: 1px solid #ccc;
+        }
+        .search-container button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: 1px solid #007bff;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .b {
+            padding: 10px;
+            border: 1px solid #999;
+            background-color: #f0f0f0;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <p class="m">مرحبا بكم</p>
+    <br>
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="ابحث هنا">
+        <button type="button" onclick="search()">بحث</button>
+    </div>
+    <div class="container">
+        <div class="video">
+            <p>سر قرمشه السمك المقلى بمنتهى السهوله والطعم خطيييير</p>
+            <video class="b" controls src="سر قرمشه السمك المقلى بمنتهى السهوله والطعم خطيييير.mp4"></video>
+        </div>
+        <div class="video">
+            <p>من غير فراخ ولا لحمه هتعملى احلى صينيه بطاطس</p>
+            <video class="b" controls src="من غير فراخ ولا لحمه هتعملى احلى صينيه بطاطس.mp4"></video>
+        </div>
+        <div class="video">
+            <p>طريقه عمل البسله بالجزر والفراخ المشويه باسهل طريقه والطعم حكايه</p>
+            <video controls class="b" src="طريقه عمل البسله بالجزر والفراخ المشويه باسهل طريقه والطعم حكايه.mp4"></video>
+        </div>
+    </div>
+
+
+
+    <script>
+        // JavaScript لتنفيذ عملية البحث
+        function search() {
+            var searchTerm = document.getElementById("searchInput").value;
+            // يمكنك هنا تنفيذ البحث بالطريقة التي تراها مناسبة، مثلاً توجيه المستخدم إلى صفحة نتائج البحث أو عرض النتائج في الصفحة نفسها.
+            alert("تم البحث عن: " + searchTerm);
+        }
+    </script>
+</body>
+</html>
